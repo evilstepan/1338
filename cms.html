@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cms</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
+    <script type="module" src="cms.html" defer></script>
+    <script src="js/cms.js" defer></script>
+</head>
+
+<body>
+    <section class="second-section">
+        <div class="second-section__line">
+            <h2 class="first-section__title">CMS</h2>
+            <p class="first-section__price">Итоговая стоимость: <span class="first-section__price-text">$ 900.00</span></p>
+        </div>
+            <table class="table-section">
+                <tr>
+                    <td class="table-section__title-td">
+                        <button class="filter">
+                            <img src="filter.png" alt="" width="20px" height="20px">
+                            <p>Фильтр</p>
+                        </button>
+                        <input type="text" class="input-search" placeholder="Поиск по наименованию и категории">
+                    </td>
+                    <td class="table-section__title-td">
+                        <button class="add-product" type="submit">Добавить товар</button>
+                    </td>
+                </tr>
+                <tr class="table-section_tr-th">
+                    <th class="table-section__th">ID</th>
+                    <th class="table-section__th">НАИМЕНОВАНИЕ</th>
+                    <th class="table-section__th">КАТЕГОРИЯ</th>
+                    <th class="table-section__th">ЕД/ИЗМ</th>
+                    <th class="table-section__th">КОЛИЧЕСТВО</th>
+                    <th class="table-section__th">ЦЕНА</th>
+                    <th class="table-section__th">ИТОГ</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <td>123</td>
+                    <td>Наименование</td>
+                    <td>Техника для дома</td>
+                    <td>шт</td>
+                    <td>5</td>
+                    <td>$100</td>
+                    <td>5</td>
+                    <td><img src="carbon_no-image.svg" alt="" width="20px" height="20px"></td>
+                    <td><img src="akar-icons_edit.svg" alt="" width="20px" height="20px"></td>
+                    <td><img src="remove.svg" alt="" width="20px" height="20px"></td>
+                </tr>
+                <!-- <tr class="table-section_tr-th"></tr> -->
+            </table>
+
+            <div class="tableContainer"></div>
+    </section>
+</body>
+
+</html>

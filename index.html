@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+  
+    <!-- <script src="js/script.js" defer></script> -->
+    <script type="module" src="js/mod/init.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;600;700&display=swap" rel="stylesheet">
+    <script src="js/cms.js" defer></script>
+</head>
+
+<body>
+    <div class="overlay">
+        <div class="module-cms ">
+            <form class="first-section" id="first-form">
+                <div class="button-cancel">
+                    <button class="cancel"><img src="Group 85.svg" alt="" width="30px"></button>
+                </div>
+                <div class="first-section__text-container">
+                    <h2 class="first-section__title">Добавить товар</h2>
+                    <!-- <p class="first-section__id-text">id: 201910241</p> -->
+                </div>
+                <div class="main-section">
+                    <div class="main-section__content-container">
+                        <!-- <form action="" class="main-section__form-wrapper"> -->
+                            <label class="main-section__name-form">Наименование</label>
+                            <input type="text" name="name" class="main-section__form" required>
+                            <label class="main-section__name-form">Категория</label>
+                            <input type="text" name="category" class="main-section__form" required>
+                    </div>
+
+                                                                    
+                    <div class="main-section__content-container">
+                        <label class="main-section__name-form">Описание</label>
+                        <textarea  class="main-section__form description" required></textarea>
+                    </div>
+        <!-- 
+                                                                    
+
+                    <div class="main-section__content-container">
+                        <label class="main-section__name-form">Описание</label>
+                        <textarea name="description" class="main-section__form description" style="resize: none;"
+                            required></textarea>
+                    </div>
+-->
+
+                    <div class="main-section__content-container asd">
+                        <label class="main-section__name-form">Единицы измерения</label>
+                        <input type="text" name="units" class="main-section__form" required>
+
+                        <label class="main-section__name-form">Дисконт</label>
+                        <div class="checkbox">
+                            <label class="checkbox style-c">
+                                <input type="checkbox" />
+                                <div class="checkbox__checkmark"></div>
+                            </label>
+                            <input type="text" name="discount" class="main-section__form discount-form litle" disabled>
+                        </div>
+                    </div>
+                    <div class="main-section__content-container asd">
+                        <label class="main-section__name-form">Количество</label>
+                        <input type="number" name="count" class="main-section__form" required>
+                        <label class="main-section__name-form">Цена</label>
+                        <input type="number" name="price" class="main-section__form" required>
+                    </div>
+                    <div class="main-section__file">
+                        <p class="main-section__error">Изображение не должно
+                            превышать размер 1 Мб</p>
+                        <input class="add-image" type="file" id="imgSet">Добавить Изображение</input>
+                    </div>
+                    <img src="/2424579063 1-PhotoRoom.png-PhotoRoom.png" alt="" class="main-section__img">
+                    <img src="Vector.svg" alt="" class="main-section__remove">
+                </div>
+                <div class="first-section__text-footer">
+                    <p class="first-section__price">Итоговая стоимость: <span class="first-section__price-text0">$</span><span class="first-section__price-text1">
+                            0</span>
+                    </p>
+                    <!-- <button class="add-product" type="submit">Добавить товар</button> -->
+                    <button class="add-product" type="submit" id="fileImg">Добавить товар</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+
+
+    <section class="second-section">
+
+        <div class="second-section__line">
+            <h2 class="first-section__title">CMS</h2>
+            <p class="first-section__price">Итоговая стоимость: <span class="first-section__price-text0">$</span><span class="first-section__price-text">0</span>
+            </p>
+        </div>
+
+        <div class="table-section">
+            <div class="row">
+                <div class="table-flex">
+                    <div class="table-section__title">
+                        <button class="filter">
+                            <span class="filter-icn"><img src="filter.png"  alt="" width="20px" height="20px"></span>
+                            <span class="filter-txt"><p>Фильтр</p></span>
+                        </button>
+                    </div>
+                    <div>
+                        
+                    <input type="text" class="input-search" src="" placeholder="Поиск по наименованию и категории">
+                    <!-- <img src="Search.svg" alt="" style="margin-left: -385px; margin-bottom: -5px;"> -->
+                </div>
+
+                </div>
+                <div class="table-section__title-td">
+                    <div class="buttona"><button class="add-product">Добавить товар</button></div>
+                </div>
+            </div>
+
+
+            <table class="table-section__table">
+                <tr class="table-section_tr-th">
+                    <th class="table-section__th">ID</th>
+                    <th class="table-section__th">НАИМЕНОВАНИЕ</th>
+                    <th class="table-section__th">КАТЕГОРИЯ</th>
+                    <th class="table-section__th">ЕД/ИЗМ</th>
+                    <th class="table-section__th ">КОЛИЧЕСТВО</th>
+                    <th class="table-section__th">ЦЕНА</th>
+                    <th class="table-section__th">ИТОГ</th>
+                    <th></th>
+                    
+                </tr>
+            </table>
+            <div class="footer">
+                <div class="footer-number">Показывать на странице: 10 <img src="Polygon 3.png" alt="Polygon" class="polygon"></div><div class="footer-number">1-10 of 276</div><div class="footer-number"><</div><div>></div></div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
